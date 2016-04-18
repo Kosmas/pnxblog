@@ -17,3 +17,6 @@ config :pnxblog, Pnxblog.Repo,
   database: "pnxblog_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Configure comeonin
+config :comeonin, bcrypt_log_rounds: 4
