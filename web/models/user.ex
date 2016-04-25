@@ -12,6 +12,8 @@ defmodule Pnxblog.User do
     # Virtual Fields
     field :password, :string, virtual: true
     field :password_confirmation, :string, virtual: true
+
+    has_many :posts, Pnxblog.Post
   end
 
   @required_fields ~w(username email password password_confirmation)

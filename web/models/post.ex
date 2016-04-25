@@ -6,6 +6,8 @@ defmodule Pnxblog.Post do
     field :body, :string
 
     timestamps
+    
+    belongs_to :user, Pnxblog.User
   end
 
   @required_fields ~w(title body)
